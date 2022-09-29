@@ -20,6 +20,9 @@ body {
   justify-content: center;
   padding: 20px;
 }
+#grau > h1 {
+  color: white;
+}
 #grau {
   text-align: center;
   background: #00a6ff;

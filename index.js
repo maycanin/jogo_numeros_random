@@ -52,7 +52,7 @@ function conferir1() {
     }
     if (palpite.value == segredo) {
       final.style.display = 'block'
-      textFinal.innerHTML = 'Parabéns você acertou o número segredo'
+      textFinal.innerHTML = '🎉 Parabéns você acertou o número segredo 🎉'
       resposta.innerHTML = ''
       palpite.disabled = true
       conferir.disabled = true
@@ -68,7 +68,7 @@ function conferir1() {
     }
     if (palpite.value == segredo) {
       final.style.display = 'block'
-      textFinal.innerHTML = 'Parabéns você acertou o número segredo'
+      textFinal.innerHTML = '🎉 Parabéns você acertou o número segredo 🎉'
       resposta.innerHTML = ''
       palpite.disabled = true
       conferir.disabled = true
