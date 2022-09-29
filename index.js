@@ -90,6 +90,7 @@ function inicio() {
   final.style.display = 'none'
   jogo.style.display = 'none'
   palpite.value = ''
+  palpite.disabled = false
   conferir.disabled = false
   resposta.innerHTML = ''
 }
