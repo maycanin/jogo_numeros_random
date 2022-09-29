@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jogo de Adivinhação de Números</title>
+  </head>
+  <body>
+    <div class="header"><h1>JOGO DE ADIVINHAÇÃO DE NÚMEROS</h1></div>
+
+    <form id="grau">
+      <h1>SELECIONE O NÍVEL DE DIFICULDADE</h1>
+      <div class="gdif">
+        <input type="radio" id="facil" name="nivel" value="facil" checked />
+        <label for="facil">FÁCIL&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="radio" id="medio" name="nivel" value="medio" />
+        <label for="medio">MÉDIO&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="radio" id="dificil" name="nivel" value="dificil" />
+        <label for="dificil">DÍFICIL</label>
+      </div>
+      <button class="btnStart" type="submit">COMEÇAR</button>
+    </form>
+
+    <div id="jogo" style="display: none;">
+      <h1>
+        O número que estou pensando está entre 0 e
+        <span id="maximo"></span>
+      </h1>
+      <h2 class="chances">
+        Você tem
+        <span id="chances"></span>
+        tentativa(s)
+      </h2>
+      <div class="palpite">
+        <label for="palpite">Insira o seu palpite</label>
+        <input
+          class="digPalpite"
+          type="number"
+          name="palpite"
+          id="palpite"
+          min="0"
+        />
+        <button id="conferir" onclick="conferir1()">CONFERIR</button>
+      </div>
+    </div>
+    <div id="final" style="display: none;">
+      <h1 id="textFinal"></h1>
+      <h1 id="resposta"></h1>
+      <div class="btnFinal">
+        <button class="btnReiniciar" onclick="reiniciar()">
+          REINICIAR JOGO
+        </button>
+        <button class="btnTrocaNivel" onclick="inicio()">
+          TROCAR DE NÍVEL
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
